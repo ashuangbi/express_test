@@ -5,3 +5,6 @@ For launching the server
 For tests:
 1. npm test
 2. the report of the coverage of the tests is in ./coverage/lcov-report/index.html
+
+Install database:
+mongorestore -d myFonciaBdd ./myFonciaBdd
