@@ -1,0 +1,46 @@
+{
+  "name": "express-server",
+  "version": "0.0.1",
+  "description": "express server",
+  "author": "",
+  "main": "index.js",
+  "private": false,
+  "scripts": {
+    "start": "NODE_ENV=development nodemon $NODE_DEBUG_OPTION --inspect --exec babel-node index.js",
+    "test": "NODE_ENV=test nyc --reporter=lcov mocha --inspect --require babel-register --timeout 10000 --exit"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "config": "^3.1.0",
+    "express": "^4.16.4",
+    "express-jwt": "^5.3.1",
+    "express-validation": "^1.0.2",
+    "http-status": "^1.3.2",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.5.6"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "mocha": "^5.1.1",
+    "nock": "^9.4.1",
+    "nodemon": "^1.18.7",
+    "nyc": "^12.0.2",
+    "supertest": "^3.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

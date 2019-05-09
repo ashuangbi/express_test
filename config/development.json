@@ -1,0 +1,10 @@
+{
+    "App" :{
+        "port" : 8000
+    },
+    "JWT_secret" : "0a6b944d-d2fb-46fc-a85e-0295c986cd12",
+    "Mongo": {
+        "host" : "mongodb://localhost:27017/myFonciaBdd",
+        "port" : 27017
+    }
+}

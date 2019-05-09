@@ -1,0 +1,10 @@
+{
+  "App" :{
+    "port" : "PORT_PREPROD"
+  },
+  "JWT_secret" : "JWT_SECRET_PREPROD",
+  "Mongo": {
+    "host" : "MONGO_URL_PREPROD",
+    "port" : 27017
+  }
+}
